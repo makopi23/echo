@@ -14,7 +14,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		log.Println("Received request")
-		fmt.Fprintf(w, "Hello GitOps!!")	// 変更箇所
+		fmt.Fprintf(w, "Hello GitOps!!!")	// 変更箇所
 	})
 
 	log.Println("Start server")
